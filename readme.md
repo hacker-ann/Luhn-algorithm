@@ -9,9 +9,10 @@ Here are the Luhn steps which are used to validate the credit card number:
 - Step 1. Double every second digit (excluding the check digit), from the rightmost and moving left. If the result of this doubling operation is greater than 9 replace it by the sum of its digits.
 - Step 2: Add all single-digit numbers.
 - Step 3: Add the un-doubled digits in the odd places from right to left.
-If the total modulo 10 is equal to 0 (if the total ends in zero) then the number is valid according to the Luhn formula; otherwise it is not valid.
 
-If you need more information how does the Luhn Algorithm work please take a look at this [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
+If the total (from step 2 and step 3) modulo 10 is equal to 0 (if the total ends in zero) then the number is valid according to the Luhn formula; otherwise it is not valid.
+
+If you need more information how does the Luhn Algorithm work please take a look [at this](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
 ## Features 
 This project includes:
